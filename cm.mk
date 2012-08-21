@@ -34,7 +34,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.goo.developerid=dudeman1996 \
     ro.goo.rom=marvel_paranoidandroid \
     ro.goo.board=marvel \
-    ro.goo.version=3
+    ro.goo.version=4
 PRODUCT_COPY_FILES += \
     device/htc/marvel_pa/app/GooManager.apk:/system/app/GooManager.apk
 
