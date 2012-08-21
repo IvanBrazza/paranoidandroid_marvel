@@ -1,7 +1,5 @@
 PRODUCT_RELEASE_NAME := PARODUDE
 
-DEVICE_PACKAGE_OVERLAYS := device/htc/marvel_pa/overlay
-
 # Boot animation
 TARGET_BOOTANIMATION_NAME := vertical-320x480
 
@@ -10,7 +8,7 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 $(call inherit-product, vendor/cm/config/gsm.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/htc/marvel/device_marvel.mk)
+$(call inherit-product, device/htc/marvel_pa/device_marvel.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := marvel
