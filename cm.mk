@@ -16,7 +16,7 @@ PRODUCT_NAME := cm_marvel
 PRODUCT_BRAND := htc_europe
 PRODUCT_MODEL := Wildfire S
 PRODUCT_MANUFACTURER := HTC
-PRODUCT_VERSION_DEVICE_RELEASE := ALPHA2
+PRODUCT_VERSION_DEVICE_RELEASE := ALPHA3
 PRODUCT_VERSION_DEVICE_SPECIFIC := -PARODUDE-$(PRODUCT_VERSION_DEVICE_RELEASE)
 
 # CM_RELEASE := true
@@ -33,7 +33,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
     ro.goo.developerid=dudeman1996 \
     ro.goo.rom=marvel_paranoidandroid \
     ro.goo.board=marvel \
-    ro.goo.version=4
+    ro.goo.version=5
 PRODUCT_COPY_FILES += \
     device/htc/marvel_pa/app/GooManager.apk:/system/app/GooManager.apk
 
