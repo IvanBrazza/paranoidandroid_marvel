@@ -29,7 +29,7 @@ BUILD_ID := PARODUDE-$(PRODUCT_VERSION_DEVICE_RELEASE)-$(shell date -u +%d)-$(sh
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_marvel BUILD_ID=$(BUILD_ID) BUILD_DISPLAY_ID=$(BUILD_ID) BUILD_FINGERPRINT=cm/htc_marvel/marvel:4.1.1/$(BUILD_ID)/0.1:user/release-keys PRIVATE_BUILD_DESC="0.1 PARODUDE release-keys"
 
 # GooManager Stuffs
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_PROPERTY_OVERRIDES := \
     ro.goo.developerid=dudeman1996 \
     ro.goo.rom=marvel_paranoidandroid \
     ro.goo.board=marvel \
@@ -38,5 +38,5 @@ PRODUCT_COPY_FILES += \
     device/htc/marvel_pa/app/GooManager.apk:/system/app/GooManager.apk
 
 #ROM Manager Stuffs
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_PROPERTY_OVERRIDES := \
     ro.rommanager.developerid=dudeman1996
