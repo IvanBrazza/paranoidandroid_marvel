@@ -5,19 +5,20 @@ Getting started
 ---------------
 First you must initialize a repository with PA's sources:
 
-    repo init -u git://github.com/ParanoidAndroid/android.git -b ics
+    repo init -u git://github.com/ParanoidAndroid/android.git -b jellybean
 
 Then create .repo/local_manifest.xml with the following in it:
 
     <?xml version="1.0" encoding="UTF-8"?>
       <manifest>
           <remote  name="cryptomilk"
-                   fetch="git://git.cryptomilk.org/" />
+                   fetch="git://git.cryptomilk.org/"
+                   revision="jellybean" />
     
-          <project name="dudeman1996/paranoidandroid_marvel.git" path="device/htc/marvel_pa" revision="master" />
-          <project name="dudeman1996/paranoidandroid_marvel_vendor.git" path="marvel_pa_vendor" revision="master">
+          <project name="dudeman1996/paranoidandroid_marvel.git" path="device/htc/marvel_pa" revision="jellybean" />
+          <project name="dudeman1996/paranoidandroid_marvel_vendor.git" path="marvel_pa_vendor" revision="jellybean">
              <copyfile dest="vendor/pa/products/pa_marvel.mk" src="products/pa_marvel.mk" />
-             <copyfile dest="vendor/pa/prebuilt/pa_marvel-pad.prop" src="prebuilt/pa_marvel-pad.prop" />
+             <copyfile dest="vendor/pa/prebuilt/pa_marvel.conf" src="prebuilt/pa_marvel.conf" />
           </project>
   
           <project name="projects/marvel/kernel_htc_msm7227.git" path="kernel/htc/msm7227" remote="cryptomilk" />
