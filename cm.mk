@@ -37,6 +37,10 @@ PRODUCT_PROPERTY_OVERRIDES := \
 PRODUCT_COPY_FILES += \
     device/htc/marvel_pa/app/GooManager.apk:/system/app/GooManager.apk
 
-#ROM Manager Stuffs
+# ROM Manager Stuffs
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.rommanager.developerid=dudeman1996
+
+# ParanoidPrefs
+PRODUCT_COPY_FILES += \
+    device/htc/marvel_pa/app/ParanoidPreferences.apk:/system/app/ParanoidPreferences.apk
