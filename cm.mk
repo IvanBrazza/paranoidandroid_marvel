@@ -1,7 +1,9 @@
 PRODUCT_RELEASE_NAME := PARODUDE
 
 # Boot animation
-TARGET_BOOTANIMATION_NAME := vertical-320x480
+TARGET_BOOTANIMATION_NAME := MDPI
+
+OVERLAY_TARGET := pa_large-mdpi
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_mini_phone.mk)
@@ -16,7 +18,7 @@ PRODUCT_NAME := cm_marvel
 PRODUCT_BRAND := htc_europe
 PRODUCT_MODEL := Wildfire S
 PRODUCT_MANUFACTURER := HTC
-PRODUCT_VERSION_DEVICE_RELEASE := ALPHA4
+PRODUCT_VERSION_DEVICE_RELEASE := ALPHA2
 PRODUCT_VERSION_DEVICE_SPECIFIC := -PARODUDE-$(PRODUCT_VERSION_DEVICE_RELEASE)
 
 # CM_RELEASE := true
@@ -33,7 +35,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
     ro.goo.developerid=dudeman1996 \
     ro.goo.rom=marvel_paranoidandroid \
     ro.goo.board=marvel \
-    ro.goo.version=5
+    ro.goo.version=6
 PRODUCT_COPY_FILES += \
     device/htc/marvel_pa/app/GooManager.apk:/system/app/GooManager.apk
 
