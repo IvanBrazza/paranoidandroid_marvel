@@ -17,7 +17,7 @@ PRODUCT_MAKEFILES += vendor/pa/product/pa_marvel.mk
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := marvel
-PRODUCT_NAME := cm_marvel
+PRODUCT_NAME := pa_marvel
 PRODUCT_BRAND := htc_europe
 PRODUCT_MODEL := Wildfire S
 PRODUCT_MANUFACTURER := HTC
