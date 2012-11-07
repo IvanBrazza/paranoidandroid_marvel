@@ -46,3 +46,10 @@ PRODUCT_PROPERTY_OVERRIDES := \
 # ParanoidPrefs
 PRODUCT_COPY_FILES += \
     device/htc/marvel_pa/app/ParanoidPreferences.apk:/system/app/ParanoidPreferences.apk
+
+PRODUCT_PROPERTY_OVERRIDES := \
+    dalvik.vm.dexopt-data-only=1 \
+    dalvik.vm.heapstartsize=5m \
+    dalvik.vm.heapgrowthlimit=48m \
+    dalvik.vm.heapsize=128m \
+    dalvik.vm.dexopt-flags=m=y
