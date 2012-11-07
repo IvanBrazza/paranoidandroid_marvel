@@ -38,9 +38,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.rommanager.developerid=dudeman1996
 
+# Make Dalvik Cache work properly
 PRODUCT_PROPERTY_OVERRIDES := \
     dalvik.vm.dexopt-data-only=1 \
     dalvik.vm.heapstartsize=5m \
     dalvik.vm.heapgrowthlimit=48m \
     dalvik.vm.heapsize=128m \
     dalvik.vm.dexopt-flags=m=y
+
+# Include CMFileManager
+PRODUCT_PACKAGES += \
+    CMFileManager
