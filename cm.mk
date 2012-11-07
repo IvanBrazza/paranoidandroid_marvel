@@ -12,9 +12,6 @@ $(call inherit-product, vendor/cm/config/gsm.mk)
 # Inherit device configuration
 $(call inherit-product, device/htc/marvel/device_marvel.mk)
 
-# Inherit PA makefile
-PRODUCT_MAKEFILES += vendor/pa/product/pa_marvel.mk
-
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := marvel
 PRODUCT_NAME := pa_marvel
