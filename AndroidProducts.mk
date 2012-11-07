@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES += \
-    vendor/pa/product/pa_marvel.mk
+    vendor/pa/products/pa_marvel.mk
