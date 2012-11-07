@@ -1,10 +1,5 @@
 PRODUCT_RELEASE_NAME := PARODUDE
 
-# Boot animation
-TARGET_BOOTANIMATION_NAME := MDPI
-
-OVERLAY_TARGET := pa_large-mdpi
-
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_mini_phone.mk)
 $(call inherit-product, vendor/cm/config/gsm.mk)
@@ -42,10 +37,6 @@ PRODUCT_COPY_FILES += \
 # ROM Manager Stuffs
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.rommanager.developerid=dudeman1996
-
-# ParanoidPrefs
-PRODUCT_COPY_FILES += \
-    device/htc/marvel_pa/app/ParanoidPreferences.apk:/system/app/ParanoidPreferences.apk
 
 PRODUCT_PROPERTY_OVERRIDES := \
     dalvik.vm.dexopt-data-only=1 \
